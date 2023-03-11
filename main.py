@@ -26,3 +26,8 @@ s = "hello 'world'"
 print(s)
 s = 'hello \"world'
 print(s)
+
+# Делаем ввод с одновременной проверкой и выводом
+
+print(int(n) if (n := input('Введите целое число: ')).isnumeric() else "Введено не число")
+
