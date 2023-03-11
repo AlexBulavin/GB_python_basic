@@ -185,5 +185,25 @@ print(f'Ура, билетик счастливый!'
 3 2 4 -> yes
 3 2 1 -> no
 
-
 '''
+print('\nЗадача 8 дополнительная')
+while  not (chocolate_length := input('Введите ширину шоколадки в дольках' 
+    f'(она должна быть натуральным числом): ')).isnumeric()\
+    and (int(chocolate_length) > 0):
+    "Введено не число или оно меньше или равно нолю, повторите ввод"
+while  not (chocolate_width := input('Введите длину шоколадки в дольках '
+    f'(она должна быть натуральным числом): ')).isnumeric()\
+    and (int(chocolate_width) > 0):
+    "Введено не число или оно меньше или равно нолю, повторите ввод"
+pieces_amount = input(f'Шоколадка {chocolate_length}X'
+    f'{chocolate_width}'
+    f'На какое количество будем делить?')
+if (pieces_amount.isnumeric()\
+    and (int(pieces_amount) > 0)\
+    and(int(chocolate_length) % int(pieces_amount == 0)\
+    or int(chocolate_width) % int(pieces_amount == 0))):
+    print(f'Шоколадка делится на {pieces_amount}!')
+       
+else: 
+    print(f'Не делится.')   
+ 
