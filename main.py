@@ -203,6 +203,8 @@ pieces_amount = input(f'Шоколадка {chocolate_length}X'
     f'На какое количество будем делить?')
 if (pieces_amount.isnumeric()\
     and (int(pieces_amount) > 0)\
+    and (int(pieces_amount) >= int(chocolate_length)\
+    or  int(pieces_amount) >= int(chocolate_width))\
     and(int(chocolate_length) % int(pieces_amount) == 0\
     or int(chocolate_width) % int(pieces_amount) == 0)):
     print(f'Шоколадка делится на {pieces_amount}!')
